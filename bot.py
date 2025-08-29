@@ -378,8 +378,7 @@ async def safe_edit(query, *args, **kwargs):
 
 def main_keyboard(game: Game) -> InlineKeyboardMarkup:
     rows = [
-        [InlineKeyboardButton(f"📷 Add photo → {game.team_a_name}", callback_data=CB_ADD_PHOTO_A),
-         InlineKeyboardButton(f"📷 Add photo → {game.team_b_name}", callback_data=CB_ADD_PHOTO_B)],
+
         [InlineKeyboardButton("✏️ Add score manually", callback_data=CB_ADD_MANUAL)],
         [InlineKeyboardButton("📊 Show score", callback_data=CB_SHOW_SCORE),
          InlineKeyboardButton("🔄 Reset", callback_data=CB_RESET_GAME)],
